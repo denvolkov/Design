@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52A9929425BEDAF800253DD1 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9929325BEDAF800253DD1 /* MenuView.swift */; };
 		52D5FACB25BAF08700632EFA /* DesignExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5FACA25BAF08700632EFA /* DesignExampleApp.swift */; };
 		52D5FACD25BAF08700632EFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5FACC25BAF08700632EFA /* ContentView.swift */; };
 		52D5FACF25BAF08D00632EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D5FACE25BAF08D00632EFA /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52A9929325BEDAF800253DD1 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		52D5FAC725BAF08700632EFA /* DesignExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D5FACA25BAF08700632EFA /* DesignExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignExampleApp.swift; sourceTree = "<group>"; };
 		52D5FACC25BAF08700632EFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				52D5FACA25BAF08700632EFA /* DesignExampleApp.swift */,
 				52D5FACC25BAF08700632EFA /* ContentView.swift */,
+				52A9929325BEDAF800253DD1 /* MenuView.swift */,
 				52D5FACE25BAF08D00632EFA /* Assets.xcassets */,
 				52D5FAD325BAF08D00632EFA /* Info.plist */,
 				52D5FAD025BAF08D00632EFA /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52D5FACD25BAF08700632EFA /* ContentView.swift in Sources */,
+				52A9929425BEDAF800253DD1 /* MenuView.swift in Sources */,
 				52D5FACB25BAF08700632EFA /* DesignExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
