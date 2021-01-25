@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		52A9929425BEDAF800253DD1 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9929325BEDAF800253DD1 /* MenuView.swift */; };
+		52A9929725BEE23A00253DD1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9929625BEE23A00253DD1 /* Home.swift */; };
+		52A9929A25BEFBD600253DD1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9929925BEFBD600253DD1 /* HomeView.swift */; };
 		52D5FACB25BAF08700632EFA /* DesignExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5FACA25BAF08700632EFA /* DesignExampleApp.swift */; };
 		52D5FACD25BAF08700632EFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5FACC25BAF08700632EFA /* ContentView.swift */; };
 		52D5FACF25BAF08D00632EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D5FACE25BAF08D00632EFA /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		52A9929325BEDAF800253DD1 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		52A9929625BEE23A00253DD1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		52A9929925BEFBD600253DD1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		52D5FAC725BAF08700632EFA /* DesignExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D5FACA25BAF08700632EFA /* DesignExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignExampleApp.swift; sourceTree = "<group>"; };
 		52D5FACC25BAF08700632EFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 				52D5FACA25BAF08700632EFA /* DesignExampleApp.swift */,
 				52D5FACC25BAF08700632EFA /* ContentView.swift */,
 				52A9929325BEDAF800253DD1 /* MenuView.swift */,
+				52A9929625BEE23A00253DD1 /* Home.swift */,
+				52A9929925BEFBD600253DD1 /* HomeView.swift */,
 				52D5FACE25BAF08D00632EFA /* Assets.xcassets */,
 				52D5FAD325BAF08D00632EFA /* Info.plist */,
 				52D5FAD025BAF08D00632EFA /* Preview Content */,
@@ -143,6 +149,8 @@
 			files = (
 				52D5FACD25BAF08700632EFA /* ContentView.swift in Sources */,
 				52A9929425BEDAF800253DD1 /* MenuView.swift in Sources */,
+				52A9929725BEE23A00253DD1 /* Home.swift in Sources */,
+				52A9929A25BEFBD600253DD1 /* HomeView.swift in Sources */,
 				52D5FACB25BAF08700632EFA /* DesignExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
