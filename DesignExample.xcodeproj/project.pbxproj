@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52A56A8825C01E4D002905C3 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A56A8725C01E4D002905C3 /* RingView.swift */; };
 		52A9929425BEDAF800253DD1 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9929325BEDAF800253DD1 /* MenuView.swift */; };
 		52A9929725BEE23A00253DD1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9929625BEE23A00253DD1 /* Home.swift */; };
 		52A9929A25BEFBD600253DD1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A9929925BEFBD600253DD1 /* HomeView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52A56A8725C01E4D002905C3 /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		52A9929325BEDAF800253DD1 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		52A9929625BEE23A00253DD1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		52A9929925BEFBD600253DD1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				52A9929325BEDAF800253DD1 /* MenuView.swift */,
 				52A9929625BEE23A00253DD1 /* Home.swift */,
 				52A9929925BEFBD600253DD1 /* HomeView.swift */,
+				52A56A8725C01E4D002905C3 /* RingView.swift */,
 				52D5FACE25BAF08D00632EFA /* Assets.xcassets */,
 				52D5FAD325BAF08D00632EFA /* Info.plist */,
 				52D5FAD025BAF08D00632EFA /* Preview Content */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A56A8825C01E4D002905C3 /* RingView.swift in Sources */,
 				52D5FACD25BAF08700632EFA /* ContentView.swift in Sources */,
 				52A9929425BEDAF800253DD1 /* MenuView.swift in Sources */,
 				52A9929725BEE23A00253DD1 /* Home.swift in Sources */,
