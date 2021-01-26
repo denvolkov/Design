@@ -52,8 +52,28 @@ struct Home: View {
             if showContent {
                 Color.white
                     .edgesIgnoringSafeArea(.all)
-             ContentView()
+                ContentView()
+                
+                VStack {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "xmark")
+                            .frame(width: 36, height: 36)
+                            .foregroundColor(.white)
+                            .background(Color.black)
+                            .clipShape(Circle())
+                    }
+                    Spacer()
+                }
+                .offset(x: -16, y: -16)
+                .transition(.move(edge: .top))
+                .animation(.spring(response: 0.6, dampingFraction: 0.8, blendDuration: 0))
+                .onTapGesture {
+                    self.showContent = false
+                }
             }
+            
+            
         }
     }
 }
