@@ -2,7 +2,7 @@
 //  Home.swift
 //  DesignExample
 //
-//  Created by test on 25.01.2021.
+//  Created by Denis Volkov on 25.01.2021.
 //
 
 import SwiftUI
