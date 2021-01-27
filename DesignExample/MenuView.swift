@@ -11,6 +11,9 @@ struct MenuView: View {
     var body: some View {
         VStack {
             Spacer()
+            
+            // MARK: - Текст и строка состояния
+            
             VStack(spacing: 16) {
                 Text("Обучение завершено на 23 %")
                     .font(.caption)
@@ -25,13 +28,18 @@ struct MenuView: View {
                     .background(Color.black.opacity(0.1))
                     .cornerRadius(12)
                 
+                // MARK: - Перечень ряда меню
+                
                 MenuRow(title: "Личный кабинет", icon: "gear")
                 MenuRow(title: "Счет", icon: "creditcard")
                 MenuRow(title: "Выход", icon: "person.crop.circle")
+                // MARK: -
             }
+           // MARK: - Модификаторы меню
+            
             .frame(maxWidth: .infinity)
             .frame(height: 300)
-            .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8505654642, green: 0.8505654642, blue: 0.8505654642, alpha: 1)), Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))]), startPoint: .top, endPoint: .bottom))
+            .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.6063896215, green: 0.9085779102, blue: 1, alpha: 1)), Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))]), startPoint: .top, endPoint: .bottom))
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
             .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
             .padding(.horizontal, 30)
@@ -45,6 +53,7 @@ struct MenuView: View {
             )
         }
         .padding(.bottom, 30)
+        // MARK: -
     }
 }
 
@@ -53,6 +62,8 @@ struct MenuView_Previews: PreviewProvider {
         MenuView()
     }
 }
+
+// MARK: - Структура Ряда меню
 
 struct MenuRow: View {
     var title: String

@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct Home: View {
-    @State var showProfile = false
-    @State var viewState = CGSize.zero
-    @State var showContent = false
+    @State var showProfile = false          //Всплывающее меню
+    @State var viewState = CGSize.zero      //Свернуть всплывающее меню
+    @State var showContent = false          //Развернуть отельное окно Сертификаты
     
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
                 .edgesIgnoringSafeArea(.all)
             
-            HomeView(showProfile: $showProfile, showContent: $showContent)
+            // MARK: - Модификаторы структы Home
+            
+            HomeView(showProfile: $showProfile, showContent: $showContent)   //Обязательно необходимо указывать State свойства структуры из другого файла
+                
                 .padding(.top, 44)
                 .background(Color.white)
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
@@ -27,6 +30,8 @@ struct Home: View {
                 .scaleEffect(showProfile ? 0.9 : 1)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
                 .edgesIgnoringSafeArea(.all)
+            
+           // MARK: - Модификаторы структуры MenuView
             
             MenuView()
                 .background(Color.black.opacity(0.001))
@@ -49,9 +54,13 @@ struct Home: View {
                         }
                 )
             
+            // MARK: - Окно "Сертификаты"
+
             if showContent {
                 Color.white
                     .edgesIgnoringSafeArea(.all)
+
+                
                 ContentView()
                 
                 VStack {
@@ -73,7 +82,7 @@ struct Home: View {
                 }
             }
             
-            
+            // MARK: -
         }
     }
 }
@@ -84,8 +93,10 @@ struct Home_Previews: PreviewProvider {
     }
 }
 
+// MARK: - Структура открытия всплывающего окна по нажатию на аватарку
+
 struct AvatarView: View {
-    @Binding var showProfile: Bool
+    @Binding var showProfile: Bool          //Связь с всплывающим меню из другого файла
     var body: some View {
         Button(action: {
             self.showProfile.toggle()
@@ -99,4 +110,4 @@ struct AvatarView: View {
     }
 }
 
-let screen = UIScreen.main.bounds
+let screen = UIScreen.main.bounds        //Чтобы всплывающее окно сдвигалось за область экрана

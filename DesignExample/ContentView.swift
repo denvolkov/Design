@@ -9,25 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var show = false
-    @State var viewState = CGSize.zero
-    @State var showCard = false
-    @State var bottomState = CGSize.zero
-    @State var showFull = false
+    @State var show = false                 // Изменение состояния по нажатию на карточку
+    @State var viewState = CGSize.zero      // Перемещение карточек по экрану
+    @State var showCard = false             // Всплывающая карточка при нажатии на основную
+    @State var bottomState = CGSize.zero    // Перемещение всплывающей карточки
+    @State var showFull = false             // Всплывающая карточка на весь экран
     
     var body: some View {
         ZStack {
+            
+            // MARK: - Название View
+            
             TitleView()
                 .blur(radius: show ? 20 : 0)
                 .opacity(showCard ? 0.4 : 1)
                 .offset(y: showCard ? -200 : 0)
                 .animation(
                     Animation
-                        .default
-                        .delay(0.1)
-//                        .speed(2)
-//                        .repeatCount(5, autoreverses: false)
+                        .default    //Вид анимации
+                        .delay(0.1) //Задержка анимации
+                    //                        .speed(2)
+                    //                        .repeatCount(5, autoreverses: false)
                 )
+            // MARK: - Карточка на заднем плане
             
             BackCardView()
                 .frame(width: showCard ? 300 : 340, height: 220)
@@ -59,6 +63,8 @@ struct ContentView: View {
                 .blendMode(.hardLight)
                 .animation(.easeInOut(duration: 0.3))
             
+            // MARK: - Основная карточка
+            
             CardView()
                 .frame(width: showCard ? 375 : 340, height: 220)
                 .background(Color.black)
@@ -83,8 +89,10 @@ struct ContentView: View {
                     }
                 )
             
-            //            Text("\(bottomState.height)")
-            //                .offset(y: -300)
+//                        Text("\(bottomState.height)")         //Значение для определения положения всплывающей карточки
+//                            .offset(y: -300)
+            
+            // MARK: - Всплывающая картачка
             
             BottomCardView(show: $showCard)
                 .offset(x: 0, y: showCard ? 360 : 1000)
@@ -120,11 +128,14 @@ struct ContentView: View {
     }
 }
 
+// MARK: -
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+// MARK: - Структура основной карточки
 
 struct CardView: View {
     var body: some View {
@@ -158,6 +169,8 @@ struct CardView: View {
     }
 }
 
+// MARK: - Структура карточки на заднем плане
+
 struct BackCardView: View {
     var body: some View{
         VStack {
@@ -166,6 +179,7 @@ struct BackCardView: View {
     }
 }
 
+// MARK: - Структура названия View
 struct TitleView: View {
     var body: some View {
         VStack {
@@ -181,8 +195,10 @@ struct TitleView: View {
     }
 }
 
+// MARK: - Структура всплывающей карточки
+
 struct BottomCardView: View {
-    @Binding var show: Bool
+    @Binding var show: Bool         //Связь с другим файлом
     
     var body: some View {
         VStack(spacing: 20) {

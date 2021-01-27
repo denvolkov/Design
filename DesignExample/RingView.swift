@@ -13,7 +13,7 @@ struct RingView: View {
     var width: CGFloat = 44
     var height: CGFloat = 44
     var percent: CGFloat = 78
-    @Binding var show: Bool
+    @Binding var show: Bool             //Связь свойства с другим файлом
     
     var body: some View {
         let multiplier = width / 44
@@ -24,7 +24,8 @@ struct RingView: View {
                 .frame(width: width, height: height)
             
             Circle()
-                .trim(from: show ? progress : 1, to: 1)
+                .trim(from: show ? progress : 1, to: 1)         //Вырезаем из фигуры участки
+                
                 .stroke(LinearGradient(gradient: Gradient(colors: [Color(color1), Color(color2)]), startPoint: .topTrailing, endPoint: .bottomLeading), style: StrokeStyle(lineWidth: 5 * multiplier, lineJoin: .round))
                 .rotationEffect(Angle(degrees: 90))
                 .rotation3DEffect(Angle(degrees: 180), axis: (x: 1, y: 0, z:0))
